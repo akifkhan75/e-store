@@ -30,20 +30,24 @@ header{
 .top-sec .navbar-nav .nav-link{
 	color: #fff;
 }
+.top-sec .feather{
+  color: #fff;
+  width: 18px;
+}
 .nav-icon{
 	position: relative;
 }
 .item-count{
-	width: 1.4rem;
-	height: 1.4rem;
+	width: 1.2rem;
+	height: 1.2rem;
 	position: absolute;
 	border-radius: 50%;
 	background: #febd69;
 	color: #fff;
 	font-size: 0.8rem;
 	text-align: center;
-	top: -12px;
-	right: -12px;
+	top: -8px;
+	right: -10px;
 }
 .main-section{
 	padding-bottom: 5rem;
@@ -175,7 +179,19 @@ header{
 .slick-prev:before, .slick-next:before{
 	color: #febd69;
 }
+
+.modal-content .close{
+  position: absolute;
+  right: 0;
+  z-index: 99
+}
 /*==  products  ==*/
+.all-products{
+  flex-flow: row wrap;
+}
+.all-products .product-card{
+  flex: 1 1 calc(25% - 8px);
+}
 .products-list{
 	margin-bottom: 3rem;
 }
@@ -379,6 +395,60 @@ ul {
 }
 /*==  news letters  ==*/
 
+/*==  sidebar  ==*/
+#sidebar {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: -301px;
+    height: 100vh;
+    z-index: 9999;
+    background: #fff;
+    color: #fff;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    background: #febd69;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #febd69;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+
 /*==  footer  ==*/
 .footer_top {
   padding: 55px 0 56px;
@@ -574,3 +644,24 @@ ul {
   margin-bottom: 8px; }
 
 /*==  footer  ==*/
+
+@media(max-width: 768px){
+  html{
+    font-size: 14px;
+  }
+  .top-nav{
+    margin-top: 0;
+  }
+  .mobile-search{
+    margin-top: 3.7rem;
+  }
+  .top-nav ul{
+    white-space: nowrap;
+    overflow: auto;
+  }
+  .top-nav .nav-link{
+    padding-right: .9rem;
+    padding-left: .9rem;
+    padding-bottom: 0.9rem;
+  }
+}
