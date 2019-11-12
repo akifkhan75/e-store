@@ -231,8 +231,8 @@
   <!-- / HEADER -->
 
   <!-- BREADCRUMB -->
-  <nav aria-label="breadcrumb">
-  <ol class="breadcrumb mb-0">
+  <nav aria-label="breadcrumb" class="rounded-0">
+  <ol class="breadcrumb mb-0 rounded-0">
     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
     <!-- <li class="breadcrumb-item"><a href="#">Library</a></li> -->
     <li class="breadcrumb-item active" aria-current="page">Shop</li>
@@ -243,17 +243,285 @@
   <section class="main-section">
 
     <!-- products section -->
-    <section class="container products-sectin my-5">
+    <section class="container products-sectin mb-4">
 
       <div class="row">
         
-        <div class="col-sm-3">
-          <div class="card">
-            test
+        <div class="col-sm-3 ">
+          <div class="card filters d-none d-sm-block p-2">
+            <div class="filter mb-3">
+              <h3 class="filter-title">Categories</h3>
+              <ul class="tree-view">    
+                <li>Computers
+                  <ul>
+                    <li><a href="#">Computer Accessories</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Data Storage</a></li>
+                    <li><a href="#">Servers</a></li>
+                    <li><a href="#">Networking Products</a></li>
+                  </ul>
+                </li>
+                <li>Electornics
+                  <ul>
+                    <li><a href="#">Camera & Photo</a></li>
+                    <li><a href="#">Television & Video</a></li>
+                    <li><a href="#">Home Audio</a></li>
+                    <li><a href="#">Office Electornics</a></li>
+                  </ul>
+                </li>
+                <li>Smart Home
+                  <ul>
+                    <li><a href="#">Lighting</a></li>
+                    <li><a href="#">Door Locks</a></li>
+                    <li><a href="#">Security Systems</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Plugs</a></li>
+                  </ul>
+                </li>
+                <li>Beauty & Personal Care
+                  <ul>
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Hair Care</a></li>
+                    <li><a href="#">Fragrance</a></li>
+                    <li><a href="#">Tools & Accessories</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter mb-3">
+              <h3 class="filter-title">
+                Customer Review
+              </h3>
+              <ul class="pl-3">
+                <li>
+                  <a href="">
+                    <span class="product-rating">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class=""></i>
+                    </span> & Up
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="product-rating">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                    </span> & Up
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="product-rating">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                    </span> & Up
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="product-rating">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                    </span> & Up
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter mb-3">
+              <h3 class="filter-title">Price</h3>
+              <ul class="mb-2 pl-3">
+                <li><a href="">Under PKR 500</a></li>
+                <li><a href="">PKR 500 to PKR 1000</a></li>
+                <li><a href="">PKR 1000 to PKR 5000</a></li>
+                <li><a href="">PKR 5000 and Above</a></li>
+              </ul>
+              <div class="d-flex">
+                <input type="number" placeholder="Min" class="form-control rounded-0">
+                <input type="number" placeholder="Max" class="form-control rounded-0">
+                <button class="btn btn-primary rounded-0">Go</button>
+              </div>
+            </div>
+
+            <div class="filter mb-3">
+              <h3 class="filter-title">New & Upcomming</h3>
+              <ul class="mb-2 pl-3">
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Comming Soon</a></li>
+              </ul>
+            </div>
+
+            <div class="filter mb-3">
+              <h3 class="filter-title">Condition</h3>
+              <ul class="mb-2 pl-3">
+                <li><a href="">New</a></li>
+                <li><a href="">Used</a></li>
+                <li><a href="">Renewed</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="filters p-2" id="drawer">
+            <div class="filter mb-3">
+              <h3 class="filter-title">Categories</h3>
+              <ul class="tree-view">    
+                <li>Computers
+                  <ul>
+                    <li><a href="#">Computer Accessories</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Data Storage</a></li>
+                    <li><a href="#">Servers</a></li>
+                    <li><a href="#">Networking Products</a></li>
+                  </ul>
+                </li>
+                <li>Electornics
+                  <ul>
+                    <li><a href="#">Camera & Photo</a></li>
+                    <li><a href="#">Television & Video</a></li>
+                    <li><a href="#">Home Audio</a></li>
+                    <li><a href="#">Office Electornics</a></li>
+                  </ul>
+                </li>
+                <li>Smart Home
+                  <ul>
+                    <li><a href="#">Lighting</a></li>
+                    <li><a href="#">Door Locks</a></li>
+                    <li><a href="#">Security Systems</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Plugs</a></li>
+                  </ul>
+                </li>
+                <li>Beauty & Personal Care
+                  <ul>
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Hair Care</a></li>
+                    <li><a href="#">Fragrance</a></li>
+                    <li><a href="#">Tools & Accessories</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter mb-3">
+              <h3 class="filter-title">
+                Customer Review
+              </h3>
+              <ul class="pl-3">
+                <li>
+                  <a href="">
+                    <span class="product-rating">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class=""></i>
+                    </span> & Up
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="product-rating">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                    </span> & Up
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="product-rating">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                    </span> & Up
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="product-rating">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                      <i data-feather="star" class=""></i>
+                    </span> & Up
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter mb-3">
+              <h3 class="filter-title">Price</h3>
+              <ul class="mb-2 pl-3">
+                <li><a href="">Under PKR 500</a></li>
+                <li><a href="">PKR 500 to PKR 1000</a></li>
+                <li><a href="">PKR 1000 to PKR 5000</a></li>
+                <li><a href="">PKR 5000 and Above</a></li>
+              </ul>
+              <div class="d-flex">
+                <input type="number" placeholder="Min" class="form-control rounded-0">
+                <input type="number" placeholder="Max" class="form-control rounded-0">
+                <button class="btn btn-primary rounded-0">Go</button>
+              </div>
+            </div>
+
+            <div class="filter mb-3">
+              <h3 class="filter-title">New & Upcomming</h3>
+              <ul class="mb-2 pl-3">
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Comming Soon</a></li>
+              </ul>
+            </div>
+
+            <div class="filter mb-3">
+              <h3 class="filter-title">Condition</h3>
+              <ul class="mb-2 pl-3">
+                <li><a href="">New</a></li>
+                <li><a href="">Used</a></li>
+                <li><a href="">Renewed</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="col-sm-9">
+          <div class="card list-header mb-1 p-2 d-flex justify-content-between align-items-center flex-row">
+            <div class="list-grid-view">
+              <span class="d-none d-sm-inline-block">
+                <a href=""><i data-feather="grid"></i></a>
+                <a href=""><i data-feather="list"></i></a>
+              </span>
+              <span class="d-inline-block d-sm-none">
+                <a href="javascript:void(0)" id="drawerCollapse"><i data-feather="filter"></i> Filters</a>
+              </span>
+            </div>
+            <div class="right-section d-flex align-items-center">
+              <div class="mx-2">
+                <select name="" id="" class="form-control">
+                  <option value="">Sort By</option>
+                </select>
+              </div>
+              <p class="m-0 d-none d-sm-block">Showing 1 - 12 of 26 Results</p>
+            </div>
+          </div>
           <div class="products all-products d-flex align-items-center">
               <div class="card product-card">
                 <div class="product-thumb">
@@ -283,6 +551,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -327,6 +602,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -371,6 +653,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -415,6 +704,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -459,6 +755,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -503,6 +806,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -547,6 +857,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -591,6 +908,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -635,6 +959,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -679,6 +1010,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -723,6 +1061,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -767,6 +1112,13 @@
                 </div>
                 <div class="product_content">
                   <div class="product_content_inner">
+                    <div class="product-rating my-2">
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star" class="fill"></i>
+                      <i data-feather="star"></i>
+                      <i data-feather="star"></i>
+                    </div>
                     <h4 class="product_name">
                       <a href="product-countdown.html">
                         Eodem modo vel mattis ante facilisis nec porttitor  efficitur
@@ -784,6 +1136,21 @@
                 </div>
               </div>
             </div>
+
+            <nav aria-label="Page navigation" class="mt-4">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+
         </div>
 
       </div>
@@ -1040,92 +1407,6 @@
   <script src="js/mmenu-light.js" ></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
-  <script>
-    feather.replace();
-    $(document).ready(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-
-            $('#dismiss, .overlay').on('click', function () {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-       $('.products-list').slick({
-          infinite: true,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-           responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
-        });
-       // product slider
-        $('.productSlider').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          fade: true,
-          asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          asNavFor: '.productSlider',
-          dots: true,
-          centerMode: true,
-          focusOnSelect: true
-        });
-    })
-
-    var menu = new MmenuLight( document.querySelector( '#sideMenu' ), {
-        // title: 'Menu',
-        // theme: 'light',// 'dark'
-        // slidingSubmenus: true,// false
-        // selected: 'Selected'
-      });
-      menu.enable( 'all' ); // '(max-width: 900px)'
-      menu.offcanvas({
-        // position: 'left',// 'right'
-        // move: true,// false
-        // blockPage: true,// false / 'modal'
-      });
-
-      //  Open the menu.
-      document.querySelector( 'a[href="#sideMenu"]' )
-        .addEventListener( 'click', ( evnt ) => {
-          menu.open();
-
-          //  Don't forget to "preventDefault" and to "stopPropagation".
-          evnt.preventDefault();
-          evnt.stopPropagation();
-        });
-  </script>
+  <script src="js/estore-ui.js"> </script>
 </body>
 </html>

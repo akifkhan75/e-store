@@ -18,6 +18,10 @@ a{
 	max-width: 1400px;
 }
 
+.feather{
+  width: 18px;
+}
+
 /*==  top section  ==*/
 
 header{
@@ -111,7 +115,7 @@ header{
 
 .main-section{
 	background: #F5F5F9;
-	padding-top: 3rem;
+	padding-top: 1rem;
 }
 
 .single_categories_product{
@@ -328,7 +332,93 @@ ul {
     max-width: 220px;
     width: 100%;
 }
+.product-rating .feather{
+  width: 16px;
+  color: #dadada;
+}
+.product-rating .feather.fill{
+  color: #febd69;
+}
 /*==  products  ==*/
+
+/*==  tree view  ==*/
+.tree, .tree ul {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.tree ul {
+    margin-left:1em;
+    position:relative
+}
+.tree ul ul {
+    margin-left:.5em
+}
+.tree ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    border-left:1px solid
+}
+.tree li {
+    margin:0;
+    padding:0 1em;
+    line-height:2em;
+    color:#369;
+    font-weight:700;
+    position:relative;
+    cursor: pointer;
+}
+.tree ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:1em;
+    left:0
+}
+.tree ul li:last-child:before {
+    background:#fff;
+    height:auto;
+    top:1em;
+    bottom:0
+}
+.indicator {
+    margin-right:5px;
+}
+.tree li a {
+    text-decoration: none;
+    color:#369;
+}
+.tree li button, .tree li button:active, .tree li button:focus {
+    text-decoration: none;
+    color:#369;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
+/*==  tree view  ==*/
+
+/*==  filters  ==*/
+.filter-title{
+    font-size: 1.2rem;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.filter a:hover{
+  text-decoration: none;
+}
+/*==  filters  ==*/
 
 /*==  news letters  ==*/
 .newsletter_area {
@@ -396,21 +486,20 @@ ul {
 /*==  news letters  ==*/
 
 /*==  sidebar  ==*/
-#sidebar {
+#drawer {
     width: 300px;
     position: fixed;
     top: 0;
-    left: -301px;
+    right: -301px;
     height: 100vh;
     z-index: 9999;
     background: #fff;
-    color: #fff;
     transition: all 0.3s;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-#sidebar.active {
-    left: 0;
+#drawer.active {
+    right: 0;
 }
 
 #dismiss {
@@ -439,9 +528,10 @@ ul {
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
+    z-index: 1032;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    top: 0
 }
 .overlay.active {
     display: block;
@@ -663,5 +753,9 @@ ul {
     padding-right: .9rem;
     padding-left: .9rem;
     padding-bottom: 0.9rem;
+  }
+  .all-products .product-card{
+    flex: 1 0 100%;
+    margin-bottom: 0.8rem;
   }
 }

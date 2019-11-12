@@ -192,6 +192,7 @@
         <li><a href="#contact">About Us</a></li>
       </ul>
     </nav>
+    <!-- / sidebar -->
     <nav class="navbar navbar-expand navbar-dark d-block d-sm-none mobile-search">
       <div class="main-search">
           <div class="input-group">
@@ -242,21 +243,21 @@
         <div class="carousel-item active">
           <img src="images/slider/slider (1).jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
+            <h1>First slide label</h1>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="images/slider/slider (5).jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
+            <h1>Second slide label</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="images/slider/slider (6).jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
+            <h1>Third slide label</h1>
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
@@ -435,7 +436,7 @@
 
       <!-- featured products -->
       <div class="featured-products products">
-        <div class="tabs-header d-flex justify-content-between align-items-center mb-3">
+        <div class="tabs-header d-flex justify-content-between flex-column flex-sm-row align-items-start align-items-sm-center mb-3">
           <h3>Featured Products</h3>
           <ul class="nav nav-tabs" id="featured" role="tablist">
             <li class="nav-item">
@@ -730,7 +731,7 @@
 
       <!-- featured products -->
       <div class="featured-products products">
-        <div class="tabs-header d-flex justify-content-between align-items-center mb-3">
+        <div class="tabs-header d-flex justify-content-between flex-column flex-sm-row align-items-start align-items-sm-center mb-3">
           <h3>Top Rated</h3>
           <ul class="nav nav-tabs" id="featured" role="tablist">
             <li class="nav-item">
@@ -1025,7 +1026,7 @@
 
       <!-- featured products -->
       <div class="featured-products products">
-        <div class="tabs-header d-flex justify-content-between align-items-center mb-3">
+        <div class="tabs-header d-flex justify-content-between flex-column flex-sm-row align-items-start align-items-sm-center mb-3">
           <h3>New Arrivals</h3>
           <ul class="nav nav-tabs" id="featured" role="tablist">
             <li class="nav-item">
@@ -1568,92 +1569,6 @@
   <script src="js/mmenu-light.js" ></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
-  <script>
-    feather.replace();
-    $(document).ready(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-
-            $('#dismiss, .overlay').on('click', function () {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-       $('.products-list').slick({
-          infinite: true,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-           responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
-        });
-       // product slider
-        $('.productSlider').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          fade: true,
-          asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          asNavFor: '.productSlider',
-          dots: true,
-          centerMode: true,
-          focusOnSelect: true
-        });
-    })
-
-    var menu = new MmenuLight( document.querySelector( '#sideMenu' ), {
-        // title: 'Menu',
-        // theme: 'light',// 'dark'
-        // slidingSubmenus: true,// false
-        // selected: 'Selected'
-      });
-      menu.enable( 'all' ); // '(max-width: 900px)'
-      menu.offcanvas({
-        // position: 'left',// 'right'
-        // move: true,// false
-        // blockPage: true,// false / 'modal'
-      });
-
-      //  Open the menu.
-      document.querySelector( 'a[href="#sideMenu"]' )
-        .addEventListener( 'click', ( evnt ) => {
-          menu.open();
-
-          //  Don't forget to "preventDefault" and to "stopPropagation".
-          evnt.preventDefault();
-          evnt.stopPropagation();
-        });
-  </script>
+  <script src="js/estore-ui.js"> </script>
 </body>
 </html>
