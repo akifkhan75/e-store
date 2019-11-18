@@ -34,8 +34,8 @@ header{
 .top-sec .navbar-nav .nav-link{
 	color: #fff;
 }
-.top-sec .feather{
-  color: #fff;
+.menu-icon .feather{
+  color: #fff !important;
   width: 18px;
 }
 .nav-icon{
@@ -46,7 +46,7 @@ header{
 	height: 1.2rem;
 	position: absolute;
 	border-radius: 50%;
-	background: #febd69;
+	background: #f90;
 	color: #fff;
 	font-size: 0.8rem;
 	text-align: center;
@@ -94,8 +94,8 @@ header{
 }
 /*==  top section  ==*/
 .btn-primary{
-	background: #febd69;
-	border-color: #febd69;
+	background: #f90;
+	border-color: #f90;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active{
 	background: #f3a847;
@@ -181,7 +181,7 @@ header{
     z-index: 2
 }
 .slick-prev:before, .slick-next:before{
-	color: #febd69;
+	color: #f90;
 }
 
 .modal-content .close{
@@ -201,7 +201,7 @@ header{
 }
 .products h3{
 	font-size: 1.2rem;
-	border-left: 5px solid #febd69;
+	border-left: 5px solid #f90;
 	padding-left: 0.8rem;
 }
 .products .nav-tabs{
@@ -216,7 +216,7 @@ header{
 .products .nav-link.active{
 	background: none;
 	border: none;
-	color: #febd69;
+	color: #f90;
 }
 .products .product-thumb{
     position: relative;
@@ -337,7 +337,18 @@ ul {
   color: #dadada;
 }
 .product-rating .feather.fill{
-  color: #febd69;
+  color: #f90;
+}
+.product-details{
+  background: #fff;
+  padding: 1rem;
+}
+.product-details .price_box{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.product-details .price_box .current_price{
+  font-size: 1.5rem;
 }
 /*==  products  ==*/
 
@@ -507,7 +518,7 @@ ul {
     height: 35px;
     line-height: 30px;
     text-align: center;
-    background: #febd69;
+    background: #f90;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -519,7 +530,7 @@ ul {
 
 #dismiss:hover {
     background: #fff;
-    color: #febd69;
+    color: #f90;
 }
 
 .overlay {
